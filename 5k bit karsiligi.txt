@@ -1,0 +1,19 @@
+package uygulama;
+
+public class binary {
+
+	public static void main(String[] args) {
+		
+		for(int index =5;index <=100;index+=5) {
+		String str =" " ; 
+			int tmp = index ; //gecici degisken
+			for(int j = 0 ; tmp>0;j++) {
+				str = tmp %2 + str ; 
+				tmp/=2;
+			}
+			System.out.println(index + " sayinin bit karsiligi "+ str );
+		}
+		
+	}
+
+}
